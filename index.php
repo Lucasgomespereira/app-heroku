@@ -7,16 +7,10 @@
     <title>App - Heroku</title>
 </head>
 <body>
-    <input type="text" name="senha1" id="senha1">
-    <input type="text" name="senha2" id="senha2">
-    <?php
-        $senha1= $_POST["senha1"];
-        $senha2= $_POST["senha2"];
-        if($senha1==$senha2){
-            echo "Senha aceita!";
-        }else{
-            echo "Preencha os campos corretamente!";
-        }
-    ?>
+<form action="POST" action="recebe.php">
+        <input type="text" name="senha1" id="senha1">
+        <input type="text" name="senha2" id="senha2">
+        <input type="submit" value="Enviar">
+</form>
 </body>
 </html>
