@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,11 +18,15 @@
     <?php
         $senha1= $_POST["senha1"];
         $senha2= $_POST["senha2"];
+        $certo = "certo";
+        $errado = "errado";
+        echo "Valor digitado: <br>Senha 1: ".$senha1."<br>Senha 2:".$senha2;
         if($senha1==$senha2){
-            echo "<h1 id=".certo.">Senha aceita!</h1>";
+            echo "<h1 id=".$certo.">Senha aceita!</h1>";
         }else{
-            echo "<h1 id=".errado.">Preencha os campos corretamente!</h1>";
+            echo "<h1 id=".$errado.">Preencha os campos corretamente!</h1>";
         }
     ?>
+    <a href="index.php"><button>Voltar</button></a>
 </body>
 </html>

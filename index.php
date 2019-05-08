@@ -7,10 +7,17 @@
     <title>App - Heroku</title>
 </head>
 <body>
-<form action="POST" action="recebe.php">
-        <input type="text" name="senha1" id="senha1">
-        <input type="text" name="senha2" id="senha2">
-        <input type="submit" value="Enviar">
+<fieldset>
+<legend>Formulário de Senha</legend>
+<form method="POST" action="recebe.php">
+    <label for="">Senha 1:</label>
+    <input type="password" name="senha1" id="senha1"><br>
+    <br>
+    <label for="">Senha 1:</label>
+    <input type="password" name="senha2" id="senha2">
+    <br>
+    <input type="submit" value="Enviar">
 </form>
+</fieldset>
 </body>
 </html>
